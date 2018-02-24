@@ -1,0 +1,150 @@
+.navbar { -webkit-app-region:drag !important; -webkit-user-select: none; z-index: 999}
+body { padding-top: 49px; -webkit-app-region:drag }
+button,textarea,input {-webkit-app-region: no-drag;}
+.drag-zone {border: 2px dashed #777;border-radius: 5px;}
+.drag-zone.over {
+    border: 2px dashed #000;
+    background-color: #ececec;
+  }
+.drag-zone  p{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #333;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: Arial;
+  }
+.drag-zone input{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+  }
+
+.navbar-nighthawk{
+    border-color: rgba(0,0,0,.12);
+    background: #4B79A1;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:#fff;
+    box-shadow: 1px 1px 1px 0 rgba(0,0,0,.10), 0 3px 15px 0 rgba(0,0,0,.12);
+}
+
+.navbar h1{
+    /* background: #4B79A1; 
+    background: -webkit-linear-gradient(to right, #283E51, #4B79A1); 
+    background: linear-gradient(to right, #283E51, #4B79A1);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    padding: 0 0.5em 0.5em 0.5em !important;
+    margin: 0 0 0.5em 0 !important;
+    box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border {
+   font-size: 1.2em !important;
+   font-weight: bold !important;
+   text-align: left !important;
+   width:auto;
+   padding:0 2px;
+   border-bottom:none;
+}
+/*Tatyana's CSS starts here*/
+.jumbotron.pageHeader {
+    border-radius: 0;
+    background-color: #333;
+    color: #d8d8d8;
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.navbar-default h1 {
+    font-weight: 400;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.container-fluid.pageSubheader{
+    margin-bottom: 5px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #e3e3e3;
+    text-align: center;
+}
+h2 {
+    margin: 10px 0;
+    font-weight: 300;
+    font-size: 26px;
+}
+h3 {
+    margin-top: 5px;
+    display: inline-block;
+    margin-bottom:2px;
+}
+sup {
+    background-color: #ffff66;
+    margin: 0 5px;
+}
+.bg-gray {
+    background-color: #f0f0f0;
+    border: 1px solid #e3e3e3;
+    padding: 0 15px;
+}
+.bg-gray hr {
+    border-top: 1px solid rgb(51, 51, 51);
+    margin: 5px 0;
+}
+.bg-gray .fa-chevron-down {
+    color: rgb(51, 51, 51);
+}
+.bg-gray h3 {
+    margin: 5px 0;
+}
+.headerBlue {
+    color: #286090;
+}
+.nopad {
+    padding: 0;
+}
+.nopadL {
+    padding-left: 0;
+}
+.nopadR {
+    padding-right: 0;
+}
+.fa-chevron-down {
+    margin-left:30px; 
+    color: #286090;
+}
+.w100 {
+    width: 100%;
+}
+.form-group > .form-group:first-child .row {
+    padding-bottom: 10px;
+}
+.form-group > .form-group:first-child .row:last-child {
+    padding-bottom: 0px;
+}
+.form-group .col-xs-4 input, .form-group .col-xs-9 textarea{
+    width: 100%;
+}
+.noverticalspace {margin: 1px;}
+#chkHeader {
+    box-shadow: none;
+    margin: 0;
+}
+
+@media only screen and (min-width: 992px) {
+    body > .container-fluid {
+        min-width: 1188px;/*adjusted for ad widthe*/
+    }
+}
+
+thead { background-color: #f1f1f1;}

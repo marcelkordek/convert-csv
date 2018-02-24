@@ -1,6 +1,6 @@
 {
   "name": "convert-csv",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CSV/XLS Converter Electron",
   "main": "main.js",
   "scripts": {
@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/marcelkordek/convert-csv#readme",
   "devDependencies": {
-    "electron": "^2.0.0-beta.1",
+    "electron": "^1.8.2",
     "electron-builder": "^20.2.0",
     "electron-builder-squirrel-windows": "^20.2.0",
     "electron-is-dev": "^0.3.0",
