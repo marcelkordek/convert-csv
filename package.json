@@ -1,6 +1,6 @@
 {
   "name": "Convert-CSV",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "CSV/XLS Converter Electron",
   "main": "main.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "build -mw",
     "build-mac": "build --m -p never",
     "ship": "build --m -p always",
-    "postversion": "git push && npm run build-mac",
+    "postversion": "git push && npm run ship",
     "ship-patch": "npm version patch --force -m \"version %s\"",
     "ship-minor": "npm version minor --force -m \"version %s\""
   },
@@ -31,11 +31,12 @@
   "devDependencies": {
     "electron": "^1.8.2",
     "electron-builder": "^20.2.0",
-    "electron-builder-squirrel-windows": "^20.2.0",
-    "electron-is-dev": "^0.3.0",
-    "electron-log": "^2.2.14"
+    "electron-builder-squirrel-windows": "^20.2.0"
   },
   "dependencies": {
-    "alasql": "^0.4.5"
+    "alasql": "^0.4.5",
+    "electron-is-dev": "^0.3.0",
+    "electron-log": "^2.2.14",
+    "electron-updater": "^2.20.1"
   }
 }
