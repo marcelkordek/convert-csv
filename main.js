@@ -12,8 +12,9 @@ autoUpdater.logger.transports.file.level = 'info';
 log.info('App starting...');
 
 // set autopdater options
-autoUpdater.allowPrerelease = true;
-autoUpdater.allowDowngrade = true;
+// autoUpdater.allowPrerelease = true;
+// autoUpdater.allowDowngrade = true;
+autoUpdater.requestHeaders = { "Private-Token": "54f8feb4de48254453d0ea929f46973d8b41c94e"};
 
 // Set Name
 app.setName('Convert CSV')
