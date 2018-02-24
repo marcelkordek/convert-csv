@@ -1,14 +1,14 @@
 {
-  "name": "convert-csv",
-  "version": "1.0.2",
+  "name": "Convert-CSV",
+  "version": "1.0.3",
   "description": "CSV/XLS Converter Electron",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "dist": "build -mw",
-    "dist-mac": "build --m -p never",
+    "build": "build -mw",
+    "build-mac": "build --m -p never",
     "ship": "build --m -p always",
-    "postversion": "git push && npm run dist-mac",
+    "postversion": "git push && npm run build-mac",
     "ship-patch": "npm version patch --force -m \"version %s\"",
     "ship-minor": "npm version minor --force -m \"version %s\""
   },
