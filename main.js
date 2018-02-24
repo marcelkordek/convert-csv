@@ -1,13 +1,19 @@
-const electron = require('electron')
-// Module to control application life.
-const app = electron.app
-const Menu = electron.Menu
-// Module to create native browser window.
-const BrowserWindow = electron.BrowserWindow
+const {app, Menu, BrowserWindow, ipcMain, dialog} = require('electron');
+const {autoUpdater} = require("electron-updater");
+const log = require('electron-log');
+const isDev = require('electron-is-dev');
 
 const path = require('path')
 const url = require('url')
 const fs = require('fs');
+
+autoUpdater.logger = log;
+autoUpdater.logger.transports.file.level = 'info';
+log.info('App starting...');
+
+// set autopdater options
+autoUpdater.allowPrerelease = true;
+autoUpdater.allowDowngrade = true;
 
 // Set Name
 app.setName('Convert CSV')
@@ -64,10 +70,11 @@ function createWindow() {
   require('./mainmenu/menu')
 }
 
-// This method will be called when Electron has finished
-// initialization and is ready to create browser windows.
-// Some APIs can only be used after this event occurs.
-app.on('ready', createWindow)
+// when the app is loaded create a BrowserWindow and check for updates
+app.on('ready', function() {
+    createWindow()
+    if (!isDev) autoUpdater.checkForUpdatesAndNotify();
+  });
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function () {

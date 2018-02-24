@@ -1,6 +1,5 @@
-const { Menu, BrowserWindow } = require('electron')
-const electron = require('electron')
-const app = electron.app
+const { app, Menu, BrowserWindow } = require('electron')
+const update = require('./updater');
 
 const template = [{
   label: 'Anzeigen',
@@ -23,7 +22,7 @@ const template = [{
     }
   },
   {
-    label: 'Toggle DevTools',
+    label: 'Toggle Developer Tools',
     accelerator: 'Alt+Command+I',
     click: function () { BrowserWindow.getFocusedWindow().toggleDevTools(); }
   }, {
@@ -100,6 +99,9 @@ if (process.platform === 'darwin') {
     submenu: [{
       label: `Über ${name}`,
       role: 'about'
+    },{
+      label: 'Auf Update prüfen ',
+      click(item, focusedWindow, event) { update.checkForUpdates(item, focusedWindow, event); }
     }, {
       type: 'separator'
     }, {
