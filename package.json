@@ -1,6 +1,6 @@
 {
   "name": "Convert-CSV",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "CSV/XLS Converter Electron",
   "main": "main.js",
   "scripts": {
