@@ -14,7 +14,6 @@ log.info('App starting...');
 // set autopdater options
 // autoUpdater.allowPrerelease = true;
 // autoUpdater.allowDowngrade = true;
-autoUpdater.requestHeaders = { "Private-Token": "54f8feb4de48254453d0ea929f46973d8b41c94e"};
 
 // Set Name
 app.setName('Convert CSV')
@@ -75,6 +74,7 @@ function createWindow() {
 app.on('ready', function() {
     createWindow()
     if (!isDev) autoUpdater.checkForUpdatesAndNotify();
+    //autoUpdater.checkForUpdatesAndNotify()
   });
 
 // Quit when all windows are closed.
