@@ -1,4 +1,5 @@
 const { app, Menu, BrowserWindow } = require('electron')
+const isDev = require('electron-is-dev');
 const update = require('./updater');
 
 const template = [{
@@ -24,7 +25,8 @@ const template = [{
   {
     label: 'Toggle Developer Tools',
     accelerator: 'Alt+Command+I',
-    click: function () { BrowserWindow.getFocusedWindow().toggleDevTools(); }
+    click: function () { BrowserWindow.getFocusedWindow().toggleDevTools(); },
+    visible: isDev
   }, {
     label: 'Vollbild umschalten',
     accelerator: (function () {

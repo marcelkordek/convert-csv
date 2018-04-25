@@ -14,13 +14,6 @@ log.info('App starting...');
 // set autopdater options
 // autoUpdater.allowPrerelease = true;
 // autoUpdater.allowDowngrade = true;
-autoUpdater.setFeedURL({
-  provider: 'github',
-  token: '577ade9980c7ea910597e4c70a6ee2dd2f64bf44',
-  owner: 'marcelkordek',
-  repo: 'convert-csv',
-  private: true
-})
 
 // Set Name
 app.setName('Convert CSV')
