@@ -1,5 +1,6 @@
 {
   "name": "Convert-CSV",
+  "productName": "Convert-CSV Desktop",
   "version": "1.0.15",
   "description": "CSV/XLS Converter Electron",
   "main": "main.js",
@@ -15,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marcelkordek/convert-csv.git"
+    "url": "git+https://github.com/marcelkordek/convert-csv-desktop.git"
   },
   "keywords": [
     "electron",
@@ -26,11 +27,11 @@
   "author": "Marcel Kordek",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/marcelkordek/convert-csv/issues"
+    "url": "https://github.com/marcelkordek/convert-csv-desktop/issues"
   },
-  "homepage": "https://github.com/marcelkordek/convert-csv#readme",
+  "homepage": "https://github.com/marcelkordek/convert-csv-desktop#readme",
   "devDependencies": {
-    "electron": "^2.0.0-beta.4",
+    "electron": "^2.0.0-beta.7",
     "electron-builder": "^20.5.1",
     "electron-builder-squirrel-windows": "^20.2.0"
   },
@@ -39,5 +40,12 @@
     "electron-is-dev": "^0.3.0",
     "electron-log": "^2.2.14",
     "electron-updater": "^2.21.0"
+  },
+  "build": {
+    "appId": "de.marcelkordek.convert-csv-desktop",
+    "productName": "Convert-CSV Desktop",
+    "mac": {
+      "category": "public.app-category.productivity"
+    }
   }
 }
