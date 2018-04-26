@@ -1,15 +1,15 @@
 {
   "name": "Convert-CSV",
   "productName": "Convert-CSV Desktop",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "CSV/XLS Converter Electron",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "build": "build -mw",
     "build-mac": "build --m -p never",
-    "ship": "build --m -p always",
-    "postversion": "git add .gitignore && git push && npm run ship",
+    "release": "build --m -p always",
+    "postversion": "git add .gitignore && git push && npm run release",
     "ship-patch": "npm version patch --force -m \"version %s\"",
     "ship-minor": "npm version minor --force -m \"version %s\"",
     "ship-major": "npm version major --force -m \"version %s\""
