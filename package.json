@@ -1,7 +1,7 @@
 {
   "name": "Convert-CSV",
   "productName": "Convert-CSV Desktop",
-  "version": "1.0.15",
+  "version": "1.0.18",
   "description": "CSV/XLS Converter Electron",
   "main": "main.js",
   "scripts": {
@@ -32,14 +32,14 @@
   "homepage": "https://github.com/marcelkordek/convert-csv-desktop#readme",
   "devDependencies": {
     "electron": "^2.0.0-beta.7",
-    "electron-builder": "^20.5.1",
+    "electron-builder": "^20.8.1",
     "electron-builder-squirrel-windows": "^20.2.0"
   },
   "dependencies": {
     "alasql": "^0.4.5",
     "electron-is-dev": "^0.3.0",
     "electron-log": "^2.2.14",
-    "electron-updater": "^2.21.0"
+    "electron-updater": "^2.21.8"
   },
   "build": {
     "appId": "de.marcelkordek.convert-csv-desktop",

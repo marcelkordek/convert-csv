@@ -15,9 +15,6 @@ log.info('App starting...');
 // autoUpdater.allowPrerelease = true;
 // autoUpdater.allowDowngrade = true;
 
-// Set Name
-app.setName('Convert CSV')
-
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
@@ -26,6 +23,7 @@ function createWindow() {
 
   // Create the browser window.
   mainWindow = new BrowserWindow({
+    title: app.getName(),
     width: 1200,
     height: 670,
     minWidth: 1200,
