@@ -1,7 +1,7 @@
 {
   "name": "Convert-CSV",
   "productName": "Convert-CSV Desktop",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "CSV/XLS Converter Electron",
   "main": "main.js",
   "scripts": {
